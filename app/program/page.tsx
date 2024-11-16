@@ -1,95 +1,27 @@
-import NewsletterForm from 'pliny/ui/NewsletterForm'
-import Image from 'next/image'
+import projectsData from '@/data/projectsData'
+import Card from '@/components/Card'
+import Link from '@/components/Link'
 import workshopsFoundationsData from '@/data/workshopsFoundationsData'
 import workshopsKnowwhyData from '@/data/workshopsKnowwhyData'
 import workshopsParentsData from '@/data/workshopsParentsData'
 import CardWorkshop from '@/components/CardWorkshop'
-import Link from 'next/link'
-
 import { genPageMetadata } from 'app/seo'
 
-export const metadata = genPageMetadata({
-  title: 'HelloMaker | STEAM Workshop Program & Mobile Makerspace',
-})
+export const metadata = genPageMetadata({ title: 'Program' })
 
-export default function HelloMaker() {
+export default function Program() {
   return (
     <>
-      <div className="">
-        <div className="space-y-2 pb-8 pt-6 md:space-y-5 md:flex items-center">
-          <div className=" p-8">
-            <Image
-              src="/assets/logo-hellomaker.svg"
-              width={800}
-              height={800}
-              alt="Picture of the author"
-              className="drop-shadow-xl"
-            />
-          </div>
-
-          <div className="prose">
-            <p className="display-m text-lg">
-              <strong>HelloMaker</strong> provides holistic introduction, guidance and support with{' '}
-              <abbr title="STEM represents science, technology, engineering and maths. “STEAM” represents STEM plus the arts – humanities, language arts, dance, drama, music, visual arts, design and new media">
-                STEAM
-              </abbr>{' '}
-              related disciplines. Journeying from <strong>unplugged</strong> to{' '}
-              <strong>plugged-in</strong> we work to equip young people as creators not just
-              consumers of digital technology.
-            </p>
-
-            <p>
-              Through a Workshop Program and{' '}
-              <Link href="/projects/hellomaker/makerspace">Mobile Makerspace</Link> I want to
-              support young people on a journey from <strong>Explore</strong> to{' '}
-              <strong>Maker</strong> to <strong>Changer.</strong> Moving from the joy of exploring
-              and sense making to acquiring the mindsets and technical skills to be able to bring
-              ideas to life, right through to combining knowledge and skills with critical thinking
-              and the agency to positively interact with and impact the world around them.
-            </p>
-
-            <p>
-              As an unschool dad I'm no expert educator<sup>*</sup> but as a{' '}
-              <a href="https://mischacolley.com.au/" target="_blank">
-                creative technologist
-              </a>{' '}
-              I'm well placed as a learning guide on this journey...
-            </p>
-
-            <p>
-              I want to see young people empowered as confident makers and tinkerers who have a
-              balanced relationship with digital technology and reach for tech as just one off the
-              problem solving tools in their tool belt.
-            </p>
-
-            <p className="italic">
-              I'm still in the process of designing this offering. The intent is to run some trial
-              programs over the remainder of 2023 and kick things of fully in Feb 2024. You can read
-              more about what's on offer below (and express interest) and or sign up and I'll keep
-              you updated as things progress.
-            </p>
-
-            <small className="mb-4 block">
-              * I hold a valid Working with Children Check and will soon have a renewed First Aid
-              Certificate
-            </small>
-
-            {/* <p>
-              <a
-                href="https://forms.fillout.com/t/8926s4Ngckus"
-                target="_blank"
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
-              >
-                Express Interest
-              </a>{' '}
-              OR tell me more about the ...
-            </p> */}
-
-            <NewsletterForm title="Keep me updated" />
-          </div>
+      <div className="divide-y divide-gray-200 dark:divide-gray-700">
+        <div className="space-y-2 pb-8 pt-6 md:space-y-5">
+          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+            The Program
+          </h1>
+          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+            Journey from unplugged to plugged-in with balance
+          </p>
         </div>
         <div className="container py-12 prose">
-          <h2>Workshop Program</h2>
           <p>
             Technology is all around us. Today it’s easy to think that technology just refers to
             computers and apps, but the fact is humans have been creating technology for millions of
@@ -109,7 +41,7 @@ export default function HelloMaker() {
             I find that at times I share many of those feelings AND I also remember the{' '}
             <a
               href="https://www.ted.com/talks/linda_liukas_a_delightful_way_to_teach_kids_about_computers"
-              targe="_blank"
+              target="_blank"
             >
               whimsical
             </a>{' '}
@@ -159,9 +91,7 @@ export default function HelloMaker() {
           <p>TBD</p>
 
           <p>
-            <strong>
-              Pilots from Term 4 2023, program begins Feb 2024. Express Interest below.
-            </strong>
+            <strong>Program begins Feb 2025. Express Interest below.</strong>
           </p>
         </div>
       </div>
@@ -215,6 +145,13 @@ export default function HelloMaker() {
           <li>Addiction & distraction</li>
           <li>Technology & impact</li>
         </ul>
+
+        <a
+          href="https://forms.fillout.com/t/8926s4Ngckus?offer=Workshop%20Program&workshop=HelloMaker"
+          className="btn bsl-btn"
+        >
+          Express Interest
+        </a>
 
         <h2>Knowwhy Workshop (Series)</h2>
 

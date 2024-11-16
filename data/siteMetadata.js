@@ -1,8 +1,8 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Open Campus Project | Alternative learning pathways explored',
+  title: 'HelloMaker | Tech Learning for Young People',
   author: 'Mischa Colley',
-  headerTitle: 'Alternative learning pathways explored',
+  headerTitle: 'Tech Learning for Young People',
   description: 'Supporting learning beyond traditional educational institutions',
   language: 'en-us',
   theme: 'system', // system, dark or light
@@ -40,7 +40,7 @@ const siteMetadata = {
   newsletter: {
     // supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus
     // Please add your .env file and modify it according to your selection
-    provider: 'buttondown',
+    provider: 'mailchimp',
   },
   comments: {
     // If you want to use an analytics provider you have to add it to the

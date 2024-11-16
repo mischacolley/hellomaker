@@ -8,9 +8,9 @@ export default function Makerspace() {
     <>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pb-8 pt-6 md:space-y-5 prose">
-          <nav>
+          {/* <nav>
             <Link href="/projects/hellomaker">Projects | HelloMaker</Link>
-          </nav>
+          </nav> */}
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Mobile Makerspace
           </h1>
@@ -53,7 +53,7 @@ export default function Makerspace() {
 
           <p>
             These sessions will require a fair amount of self autonomy and be guided by the
-            following <Link href="/projects/hellomaker/code-of-conduct">Code of Conduct</Link>.
+            following <Link href="/code-of-conduct">Code of Conduct</Link>.
           </p>
 
           <h3>Whats available</h3>
@@ -73,9 +73,8 @@ export default function Makerspace() {
           </p>
 
           <p>
-            For the most part the makerspace will{' '}
-            <Link href="/projects/hellomaker/offgridvision">intentionally</Link> be delivered
-            off-grid in an outdoor learning experience.
+            For the most part the makerspace will <Link href="/about#vision">intentionally</Link> be
+            delivered off-grid in an outdoor learning experience.
           </p>
 
           <h3>Cost</h3>
@@ -86,7 +85,7 @@ export default function Makerspace() {
           </p>
 
           <p>
-            <strong>Sessions beginning Term 4 2023</strong>
+            <strong>Sessions beginning February 2025</strong>
           </p>
 
           <p>

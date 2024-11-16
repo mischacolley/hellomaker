@@ -1,22 +1,19 @@
 const projectsData = [
   {
+    title: 'HelloExplorer',
+    audience: `For 6-10yo who have shown interest in digital technology and or you want them to have an unplugged intro to this space`,
+    description: `Without touching a computer, or talking about code, we'll unpack the origins of modern tech. Origin stories & handcrafts will be used to lay the ground work for a deep understanding of the complex technological world we live in today.`,
+    imgSrc: '/static/images/time-machine.jpg',
+    href: '/projects/hellomaker/helloexplorer',
+  },
+  {
     title: 'HelloMaker',
-    description: `Holistic introduction, guidance & support with STEAM related disciplines. Journeying from unplugged to plugged-in we work to equip young people as creators not just consumers of digital technology. `,
-    imgSrc: '/static/images/projects/hello-maker.png',
-    href: '/projects/hellomaker',
-  },
-  {
-    title: 'Learning In-Between Podcast',
-    description: `This podcast explores how learning takes place in the spaces in-between. With boredom. With interest. With opportunity. With asking questions? With motivation or lack there of. With failure. It explores the stories of learners and learning guides from within various communities and has a focus on self directed learning and parenting off the beaten path.`,
+    audience: `For 8+ yo who possibly have some prior knowledge in digital technology or with expressed interest / an established DIY/Maker attitude.`,
+    description: `Technology timelines, inventions & ideas will be explored to make sense of where we are with digital tech today. Overtime we’ll introduce the tools, skill sets, concepts & mindsets needed to navigate and thrive in a digital world as a Maker...`,
     imgSrc: '/static/images/projects/learning-in-between.png',
-    href: '/projects/learning-in-between',
+    href: '/projects/hellomaker/hellomaker',
   },
-  {
-    title: 'Alternative learning pathways explored',
-    description: `In no particular order, here are some of the organisations and people I follow along with some of the things I’ve read, watched and listened to that have kept me inspired on this journey.`,
-    imgSrc: '/static/images/projects/alternative-learning-pathways-explored.png',
-    href: 'https://big-dust-9ee.notion.site/6af006f120644dfeb7c5be0f6dcf3252?v=92108802bade47e8984381ccec6e9290',
-  },
+
 ]
 
 export default projectsData
