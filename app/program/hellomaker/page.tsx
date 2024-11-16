@@ -1,5 +1,6 @@
 import { genPageMetadata } from 'app/seo'
 import Link from 'next/link'
+import Form from '@/components/Form'
 
 export const metadata = genPageMetadata({ title: 'HelloMaker' })
 
@@ -60,14 +61,7 @@ export default function HelloMaker() {
             <li>Retrieving sounds</li>
           </ul>
 
-          <p>
-            <a
-              href="https://forms.fillout.com/t/8926s4Ngckus?offer=Workshop%20Program&workshop=HelloMaker"
-              className="btn bsl-btn"
-            >
-              Express Interest
-            </a>
-          </p>
+          <Form />
         </div>
         <div className="container py-12">
           <div className="-m-4 flex flex-wrap"></div>

@@ -2131,6 +2131,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fillout/react@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "@fillout/react@npm:1.1.2"
+  checksum: dc4bba967bdcd0d9d02aabd3633f58dd7ed5004a7f7dee74f5cfe9a7fad44b3921c42072206b5773b4215240e271403ecc83737e5747744b7692e1019f823521
+  languageName: node
+  linkType: hard
+
 "@giscus/react@npm:^2.3.0":
   version: 2.3.0
   resolution: "@giscus/react@npm:2.3.0"
@@ -4918,7 +4925,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild@npm:0.17.x || 0.18.x, esbuild@npm:0.18.11":
+"esbuild@npm:0.17.x || 0.18.x":
   version: 0.18.11
   resolution: "esbuild@npm:0.18.11"
   dependencies:
@@ -10734,6 +10741,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "tailwind-nextjs-starter-blog@workspace:."
   dependencies:
+    "@fillout/react": ^1.1.2
     "@headlessui/react": ^1.7.17
     "@next/bundle-analyzer": 13.4.19
     "@svgr/webpack": ^8.0.1
@@ -10746,7 +10754,6 @@ __metadata:
     autoprefixer: ^10.4.13
     contentlayer: 0.3.4
     cross-env: ^7.0.3
-    esbuild: 0.18.11
     eslint: ^8.45.0
     eslint-config-next: 13.4.19
     eslint-config-prettier: ^8.8.0
