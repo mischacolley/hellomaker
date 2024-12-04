@@ -11,7 +11,7 @@ const siteMetadata = {
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
   mastodon: 'https://mastodon.social/@mastodonuser',
-  email: 'mischa@opencampusproject.com',
+  email: 'info@hellomaker.org',
   // github: 'https://github.com',
   twitter: 'https://twitter.com/opencampuspro',
   facebook: 'https://www.facebook.com/opencampusproject',

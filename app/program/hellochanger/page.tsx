@@ -1,5 +1,6 @@
 import { genPageMetadata } from 'app/seo'
 import Link from 'next/link'
+import Form from '@/components/Form'
 
 export const metadata = genPageMetadata({ title: 'HelloChanger' })
 
@@ -9,7 +10,7 @@ export default function HelloChanger() {
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pb-8 pt-6 md:space-y-5 prose">
           <nav>
-            <Link href="/projects/hellomaker">Projects | HelloMaker</Link>
+            <Link href="/program">Programs | HelloMaker</Link>
           </nav>
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             HelloChanger
@@ -74,14 +75,11 @@ export default function HelloChanger() {
             <strong>Beginning May 2024</strong>
           </p> */}
 
-          <p>
-            <a
-              href="https://forms.fillout.com/t/8926s4Ngckus?offer=Workshop%20Program&workshop=HelloChanger"
-              className="btn bsl-btn"
-            >
-              Express Interest
-            </a>
-          </p>
+          <Form
+            buttonText="Express Interest"
+            filloutId="8926s4Ngckus"
+            parameters={{ offer: 'Workshop Program', workshop: 'HelloChanger' }}
+          />
         </div>
         <div className="container py-12">
           <div className="-m-4 flex flex-wrap"></div>

@@ -26,54 +26,63 @@ export default function Home({ posts }) {
               consumers of digital technology.
             </p>
 
-            <p>
-              Through a learning community that offers Workshop Programs and a{' '}
-              <Link href="/projects/hellomaker/makerspace">Mobile Makerspace</Link> we support young
-              people on a journey from <strong>Explore</strong> to <strong>Maker</strong> to{' '}
-              <strong>Changer.</strong> Moving from the joy of exploring and sense making to
-              acquiring the mindsets and technical skills to be able to bring ideas to life, right
-              through to combining knowledge and skills with critical thinking and the agency to
-              positively interact with and impact the world around them.
-            </p>
+            {/* <Link href="/program" className="btn">
+              See Program
+            </Link> */}
 
             <p>
               As an unschool dad I'm no expert educator<sup>*</sup> but as a{' '}
               <a href="https://mischacolley.com.au/" target="_blank">
                 creative technologist
               </a>{' '}
-              I'm well placed as a learning guide on this journey...
+              with more than a decade in tech, I'm well placed as a learning guide on this
+              journey...
             </p>
 
             <p>
               I want to see young people empowered as confident makers and tinkerers who have a
               balanced relationship with digital technology and reach for tech as just one off the
-              problem solving tools in their tool belt.
+              problem solving tools in their tool belt. I'm designing the HelloMaker learning
+              community to do just that.
             </p>
 
-            <p className="italic">
-              I'm still in the process of designing this offering. The intent is to run some trial
-              programs over the remainder of 2023 and kick things of fully in Feb 2024. You can read
-              more about what's on offer below (and express interest) and or sign up and I'll keep
-              you updated as things progress.
+            <p>
+              The <Link href="/program">Program</Link> and{' '}
+              <Link href="/makerspace">Mobile Makerspace</Link> can be delivered to young people in
+              a variety of contexts and formats, including:
             </p>
 
-            <small className="mb-4 block">
-              * I hold a valid Working with Children Check and will soon have a renewed First Aid
-              Certificate
+            <ul>
+              <li>a face-to-face homeschool program</li>
+              <li>one-on-one & group mentoring</li>
+              <li>workshops at schools, festivals & community events</li>
+              <li>as an online experience</li>
+            </ul>
+
+            <p>
+              As it evolves, the intent is for HelloMaker to take young people on a journey from{' '}
+              <Link href="/program/helloexplorer">Explorer</Link> to{' '}
+              <Link href="/program/hellomaker">Maker</Link> to{' '}
+              <Link href="/program/hellochanger">Changer</Link>.
+            </p>
+            <p>
+              Moving from the joy of exploring and sense making to acquiring the mindsets and
+              technical skills to be able to bring ideas to life, right through to combining
+              knowledge and skills with critical thinking and the agency to positively interact with
+              and impact the world around them.
+            </p>
+
+            <p>
+              The intent is to do this while supporting{' '}
+              <Link href="/program/helloparent">parents</Link> along the way.
+            </p>
+
+            <small className="mb-8 block">
+              * I come from a long line of teachers, have worked as a mentor with young people
+              previously and I hold a valid Working with Children Check and a First Aid Certificate
             </small>
 
-            {/* <p>
-              <a
-                href="https://forms.fillout.com/t/8926s4Ngckus"
-                target="_blank"
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
-              >
-                Express Interest
-              </a>{' '}
-              OR tell me more about the ...
-            </p> */}
-
-            <NewsletterForm title="Keep me updated" />
+            {/* <NewsletterForm title="Keep me updated" /> */}
           </div>
         </div>
       </div>

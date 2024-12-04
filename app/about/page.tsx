@@ -15,12 +15,6 @@ export default function Page() {
       <AuthorLayout content={mainContent}>
         <MDXLayoutRenderer code={author.body.code} />
       </AuthorLayout>
-
-      <div>
-        <h2 id="vision">Vision</h2>
-
-        <p>Off Grid Vision for the Mobile Makerspace</p>
-      </div>
     </>
   )
 }

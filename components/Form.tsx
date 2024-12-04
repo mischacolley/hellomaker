@@ -4,14 +4,23 @@ import { FilloutPopupEmbed } from '@fillout/react'
 import { useState } from 'react'
 import '@fillout/react/style.css'
 
-function Form() {
+function Form({ buttonText = 'Express Interest', filloutId, parameters = {} }) {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
     <>
-      <button onClick={() => setIsOpen(true)}>Express Interest</button>
+      <button className="btn" onClick={() => setIsOpen(true)}>
+        {buttonText}
+      </button>
 
-      {isOpen && <FilloutPopupEmbed filloutId="8926s4Ngckus" onClose={() => setIsOpen(false)} />}
+      {isOpen && filloutId && (
+        <FilloutPopupEmbed
+          filloutId={filloutId}
+          inheritParameters
+          parameters={parameters}
+          onClose={() => setIsOpen(false)}
+        />
+      )}
     </>
   )
 }

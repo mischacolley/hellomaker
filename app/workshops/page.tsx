@@ -6,6 +6,7 @@ import workshopsKnowwhyData from '@/data/workshopsKnowwhyData'
 import workshopsParentsData from '@/data/workshopsParentsData'
 import CardWorkshop from '@/components/CardWorkshop'
 import { genPageMetadata } from 'app/seo'
+import Form from '@/components/Form'
 
 export const metadata = genPageMetadata({ title: 'Workshops' })
 
@@ -73,12 +74,7 @@ export default function Workshops() {
           <li>Technology & impact</li>
         </ul>
 
-        <a
-          href="https://forms.fillout.com/t/8926s4Ngckus?offer=Workshop%20Program&workshop=HelloMaker"
-          className="btn bsl-btn"
-        >
-          Express Interest
-        </a>
+        <Form buttonText="Express Interest" filloutId="t35aEvo87Jus" />
 
         <h2>Knowwhy Workshop (Series)</h2>
 
