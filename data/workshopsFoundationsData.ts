@@ -1,7 +1,7 @@
 const workshopsFoundationsData = [
   {
     title: 'HelloExplorer',
-    audience: `For 7+yo who have shown interest in digital technology and or you want them to have an unplugged intro to this space`,
+    audience: `For young people who have shown interest in digital technology and or you want them to have an unplugged intro to this space`,
     description: `Without touching a computer, or talking about code, we'll unpack the origins of modern tech. Origin stories & handcrafts will be used to lay the ground work for a deep understanding of the complex technological world we live in today.`,
     imgSrc: '/static/images/programs/explorer.png',
     href: '/program/helloexplorer',

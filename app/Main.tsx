@@ -1,34 +1,24 @@
 import Link from '@/components/Link'
-import Tag from '@/components/Tag'
-import siteMetadata from '@/data/siteMetadata'
-import { formatDate } from 'pliny/utils/formatDate'
-import workshopsFoundationsData from '@/data/workshopsFoundationsData'
-import workshopsKnowwhyData from '@/data/workshopsKnowwhyData'
-import workshopsParentsData from '@/data/workshopsParentsData'
-import CardWorkshop from '@/components/CardWorkshop'
-import NewsletterForm from 'pliny/ui/NewsletterForm'
+import Image from 'next/image'
+import Form from '@/components/Form'
 
 const MAX_DISPLAY = 5
 
 export default function Home({ posts }) {
   return (
     <>
-      <div className="">
-        <div className="space-y-2 pb-8 pt-6 md:space-y-5 md:flex items-center">
-          <div className="prose">
+      <div className="divide-y divide-gray-200 dark:divide-gray-700">
+        <div className="md:flex gap-8">
+          <div className="space-y-2 pb-8 pt-6 md:space-y-5 prose">
             <p className="display-m text-lg">
               <strong>HelloMaker</strong> provides holistic introduction, guidance and support with{' '}
-              <abbr title="STEM represents science, technology, engineering and maths. “STEAM” represents STEM plus the arts – humanities, language arts, dance, drama, music, visual arts, design and new media">
+              <abbr title="STEM represents science, technology, engineering and maths. STEAM represents STEM plus the arts – humanities, language arts, dance, drama, music, visual arts, design and new media">
                 STEAM
               </abbr>{' '}
               related disciplines. Journeying from <strong>unplugged</strong> to{' '}
               <strong>plugged-in</strong> we work to equip young people as creators not just
               consumers of digital technology.
             </p>
-
-            {/* <Link href="/program" className="btn">
-              See Program
-            </Link> */}
 
             <p>
               As an unschool dad I'm no expert educator<sup>*</sup> but as a{' '}
@@ -65,6 +55,29 @@ export default function Home({ posts }) {
               <Link href="/program/hellomaker">Maker</Link> to{' '}
               <Link href="/program/hellochanger">Changer</Link>.
             </p>
+            <div className="flex">
+              <Image
+                alt="Hello Explorer"
+                src="/static/images/HelloExplorer_Flyer.png"
+                width={300}
+                height={250}
+                className=""
+              />
+              <Image
+                alt="Hello Maker"
+                src="/static/images/HelloMaker_Flyer.png"
+                width={300}
+                height={250}
+                className=""
+              />
+              <Image
+                alt="Hello Changer"
+                src="/static/images/HelloChanger_Flyer.png"
+                width={300}
+                height={250}
+                className=""
+              />
+            </div>
             <p>
               Moving from the joy of exploring and sense making to acquiring the mindsets and
               technical skills to be able to bring ideas to life, right through to combining
@@ -81,9 +94,17 @@ export default function Home({ posts }) {
               * I come from a long line of teachers, have worked as a mentor with young people
               previously and I hold a valid Working with Children Check and a First Aid Certificate
             </small>
-
-            {/* <NewsletterForm title="Keep me updated" /> */}
           </div>
+
+          <aside className="prose">
+            <Image
+              alt="Tech Learning For Young People"
+              src="/static/images/TechLearningForYoungPeople.png"
+              width={500}
+              height={300}
+              className=""
+            />
+          </aside>
         </div>
       </div>
     </>

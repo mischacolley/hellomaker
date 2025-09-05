@@ -17,8 +17,8 @@ export default function HelloChanger() {
           </h1>
           <p>
             <em>
-              For 15+<sup>*</sup>yo who have an interest in digital technology and how it impacts
-              their world
+              For young people moving into their teenage years who have an interest in digital
+              technology and how it impacts their world
             </em>
           </p>
 

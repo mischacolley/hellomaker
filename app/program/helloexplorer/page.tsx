@@ -17,8 +17,8 @@ export default function HelloExplorer() {
           </h1>
           <p>
             <em>
-              For 6-10<sup>*</sup>yo who have shown interest in digital technology and or you want
-              them to have an unplugged intro to this space
+              For young people who have shown interest in digital technology and or you want them to
+              have an unplugged intro to this space
             </em>
           </p>
 

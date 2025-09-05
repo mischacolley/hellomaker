@@ -17,8 +17,8 @@ export default function HelloMaker() {
           </h1>
           <p>
             <em>
-              For 8+<sup>*</sup> yo who possibly have some prior knowledge in digital technology or
-              with expressed interest / an established DIY/Maker attitude.
+              For young people who possibly have some prior knowledge in digital technology or with
+              expressed interest / an established DIY/Maker attitude.
             </em>
           </p>
 

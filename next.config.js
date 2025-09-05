@@ -59,7 +59,7 @@ const securityHeaders = [
  **/
 module.exports = () => {
   const plugins = [withContentlayer, withBundleAnalyzer]
-  return plugins.reduce((acc, next) => next(acc), {
+  const nextConfig = plugins.reduce((acc, next) => next(acc), {
     reactStrictMode: true,
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
     eslint: {
@@ -67,6 +67,12 @@ module.exports = () => {
     },
     images: {
       domains: ['picsum.photos'],
+      remotePatterns: [
+        {
+          protocol: 'https',
+          hostname: 'localhost',
+        },
+      ],
     },
     experimental: {
       appDir: true,
@@ -88,4 +94,6 @@ module.exports = () => {
       return config
     },
   })
+
+  return nextConfig
 }
