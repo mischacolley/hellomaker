@@ -9,11 +9,11 @@ export default function Makerspace() {
     <>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="md:flex gap-8">
-          <div className="space-y-2 pb-8 pt-6 md:space-y-5 prose">
+          <div className="space-y-2 pb-8 pt-6 md:space-y-5 prose dark:prose-invert">
             {/* <nav>
             <Link href="/projects/hellomaker">Projects | HelloMaker</Link>
           </nav> */}
-            <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+            <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-white sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
               Mobile Makerspace
             </h1>
 
@@ -72,7 +72,7 @@ export default function Makerspace() {
               BYO DIY attitude will be a must in the early days.
             </p>
           </div>
-          <aside className="prose">
+          <aside className="prose dark:prose-invert">
             <Form
               buttonText="Express Interest"
               filloutId="8926s4Ngckus"
@@ -83,7 +83,7 @@ export default function Makerspace() {
 
             <p>
               Based on demand I'd like to begin offering popup sessions at different locations
-              around the Byron Bay area in early 2025.
+              around the Byron Bay.
             </p>
 
             <p>

@@ -13,11 +13,11 @@ export default function Program() {
     <>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="md:flex gap-8">
-          <div className="space-y-2 pb-8 pt-6 md:space-y-5 prose">
-            <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+          <div className="space-y-2 pb-8 pt-6 md:space-y-5 prose dark:prose-invert">
+            <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-white sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
               The Program
             </h1>
-            <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+            <p className="text-lg leading-7 text-gray-500 dark:text-white">
               Join a learning community empowering young people as confident makers and tinkerers
             </p>
 
@@ -58,7 +58,7 @@ export default function Program() {
             <h2>Whats on offer</h2>
           </div>
 
-          <aside className="prose">
+          <aside className="prose dark:prose-invert">
             <Form
               buttonText="Express Interest"
               filloutId="8926s4Ngckus"
@@ -79,13 +79,13 @@ export default function Program() {
               <li>as an online experience</li>
             </ul>
 
-            <p>Based on demand I'd like to offer all of these options from early 2025.</p>
+            <p>Based on demand I'd like to offer all of these options</p>
           </aside>
         </div>
       </div>
 
       <div className="py-12">
-        <div className="prose">
+        <div className="prose dark:prose-invert">
           <h2 className="">Foundations Workshop (Series)</h2>
 
           <p>
@@ -114,7 +114,7 @@ export default function Program() {
         </div>
       </div>
 
-      <div className="prose">
+      <div className="prose dark:prose-invert">
         <h2>Knowhow Workshops (One Off)</h2>
 
         <p>
@@ -165,7 +165,7 @@ export default function Program() {
         ))}
       </div>
 
-      <div className="prose my-8">
+      <div className="prose my-8 dark:prose-invert">
         <h2>Parent Support</h2>
       </div>
 

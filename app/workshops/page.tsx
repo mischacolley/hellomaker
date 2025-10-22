@@ -15,17 +15,17 @@ export default function Workshops() {
     <>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-white sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Workshops
           </h1>
-          {/* <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+          {/* <p className="text-lg leading-7 text-gray-500 dark:text-white">
             Journey from unplugged to plugged-in with balance
           </p> */}
         </div>
       </div>
 
       <div className="py-12">
-        <div className="prose">
+        <div className="prose dark:prose-invert">
           <h2 className="">Foundations Workshop (Series)</h2>
 
           <p>
@@ -50,7 +50,7 @@ export default function Workshops() {
         </div>
       </div>
 
-      <div className="prose">
+      <div className="prose dark:prose-invert">
         <h2>Knowhow Workshops (One Off)</h2>
 
         <p>
@@ -101,7 +101,7 @@ export default function Workshops() {
         ))}
       </div>
 
-      <div className="prose my-8">
+      <div className="prose my-8 dark:prose-invert">
         <h2>Parent Support</h2>
       </div>
 

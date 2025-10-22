@@ -4,12 +4,17 @@ import { FilloutPopupEmbed } from '@fillout/react'
 import { useState } from 'react'
 import '@fillout/react/style.css'
 
-function Form({ buttonText = 'Express Interest', filloutId, parameters = {} }) {
+function Form({
+  buttonText = 'Express Interest',
+  filloutId,
+  parameters = {},
+  buttonClassName = '',
+}) {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
     <>
-      <button className="btn" onClick={() => setIsOpen(true)}>
+      <button className={`btn ${buttonClassName}`} onClick={() => setIsOpen(true)}>
         {buttonText}
       </button>
 

@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from './Link'
+import Form from './Form'
 import headerNavLinks from '@/data/headerNavLinks'
 
 const MobileNav = () => {
@@ -21,12 +22,12 @@ const MobileNav = () => {
 
   return (
     <>
-      <button aria-label="Toggle Menu" onClick={onToggleNav} className="sm:hidden">
+      <button aria-label="Toggle Menu" onClick={onToggleNav} className="block sm:hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
-          className="text-gray-900 dark:text-gray-100 h-8 w-8"
+          className="text-gray-900 dark:text-white h-8 w-8"
         >
           <path
             fillRule="evenodd"
@@ -46,7 +47,7 @@ const MobileNav = () => {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className="text-gray-900 dark:text-gray-100"
+              className="text-gray-900 dark:text-white"
             >
               <path
                 fillRule="evenodd"
@@ -56,19 +57,27 @@ const MobileNav = () => {
             </svg>
           </button>
         </div>
-        <nav className="fixed mt-8 h-full">
-          {headerNavLinks.map((link) => (
-            <div key={link.title} className="px-12 py-4">
-              <Link
-                href={link.href}
-                className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
-                onClick={onToggleNav}
-              >
-                {link.title}
-              </Link>
-            </div>
-          ))}
-        </nav>
+        <div className="fixed mt-8 h-full">
+          {/* Express Interest Form */}
+          <div className="px-12 py-6 border-b border-gray-200 dark:border-gray-700">
+            <Form buttonText="Express Interest" filloutId="8926s4Ngckus" />
+          </div>
+
+          {/* Navigation Links */}
+          <nav className="mt-4">
+            {headerNavLinks.map((link) => (
+              <div key={link.title} className="px-12 py-4">
+                <Link
+                  href={link.href}
+                  className="text-2xl font-bold tracking-widest text-gray-900 dark:text-white"
+                  onClick={onToggleNav}
+                >
+                  {link.title}
+                </Link>
+              </div>
+            ))}
+          </nav>
+        </div>
       </div>
     </>
   )

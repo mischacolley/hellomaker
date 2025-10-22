@@ -38,10 +38,10 @@ const CardWorkshop = ({ title, audience, description, imgSrc, href }) => (
             title
           )}
         </h2>
-        <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400 italic text-sm">
+        <p className="prose mb-3 max-w-none text-gray-500 dark:text-white italic text-sm">
           {audience}
         </p>
-        <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400">{description}</p>
+        <p className="prose mb-3 max-w-none text-gray-500 dark:text-white">{description}</p>
         {href && (
           <Link
             href={href}
