@@ -1,9 +1,8 @@
 const headerNavLinks = [
   { href: '/', title: 'Home' },
   // { href: '/blog', title: 'Blog' },
-  { href: '/program', title: 'Program' },
-  { href: '/makerspace', title: 'Makerspace' },
-  { href: '/workshops', title: 'Workshops' },
+  { href: '/program', title: 'Our Program' },
+  { href: '/makerspace', title: 'Mobile Makerspace' },
   { href: '/about', title: 'About' },
 ]
 

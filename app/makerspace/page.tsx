@@ -17,60 +17,65 @@ export default function Makerspace() {
               Mobile Makerspace
             </h1>
 
+            <p className="text-xl italic">Learning happens in the spaces in-between</p>
+
             <p>
-              As an unschooling parent I’m forever betting on the power of learning that takes place
-              in the spaces in-between. With boredom. With interest. With opportunity. With asking
-              questions? With motivation or lack there of. With{' '}
-              <a href="https://www.youtube.com/watch?app=desktop&v=fg2GiZtQ5bk" target="_blank">
-                failure
-              </a>
-              .
+              As an unschooling parent, I've seen firsthand how powerful learning becomes when it
+              emerges from boredom, curiosity, failure, and genuine interest. There's no better
+              companion to this philosophy than the Maker Movement. Where young people learn by
+              doing, building, and creating together.
             </p>
 
             <p>
-              It's hard to think of a better companion to this mindset than that of the{' '}
-              <a
-                href="https://www.iste.org/explore/In-the-classroom/The-maker-movement-A-learning-revolution"
-                target="_blank"
-              >
-                Maker Movement
-              </a>
-              .
+              My vision is to establish a mobile makerspace: a welcoming environment where young
+              makers can gather regularly to explore, experiment, and bring their ideas to life.
+            </p>
+
+            <h3>What we'll create together</h3>
+
+            <p>
+              In casual, supportive group sessions, young people will explore STEM related topics
+              through hands-on making. Whether it's art and craft, multimedia, visual design,
+              robotics, coding, web development, or a fusion of interests, each maker sets their own
+              learning intention and chooses projects that genuinely excite them.
             </p>
 
             <p>
-              My vision is to establish a mobile environment were young people can come together
-              regularly to make, share, give, learn, play, participate, support and change.
+              These sessions welcome both <Link href="/program">Workshop Program</Link> alumni and
+              newcomers, building a diverse community of makers learning from and inspiring each
+              other.
             </p>
 
-            <h3>Whats on offer</h3>
+            <p>What to expect:</p>
+
+            <ul>
+              <li>Self-directed learning with guidance when needed</li>
+              <li>Multi-session projects that develop over time</li>
+              <li>
+                A supportive environment guided by our{' '}
+                <Link href="/code-of-conduct">Code of Conduct</Link>
+              </li>
+              <li>Opportunities to share, teach, and collaborate</li>
+            </ul>
+
+            <h3>Where we're headed</h3>
 
             <p>
-              In a casual group setting young people will be supported to explore their interests
-              around STEAM. This might be around art/craft, multimedia, visual design, robotics,
-              coding, web development or a combination of related interests. They'll be encouraged
-              to set a learning intention (so they can come back to it over a number of sessions)
-              and pick a project to work on.
+              Right now, we're starting with the essentials: curiosity and imagination. We'll also
+              have power, internet access, a laptop, and a growing collection of tools and
+              materials. I'll be building our inventory thoughtfully, with plans to expand into a
+              fully-equipped mobile makerspace. The vision is a trailer that can serve as an outdoor
+              classroom and allow us to work with underserved communities across regional and remote
+              areas.
             </p>
 
-            <p>
-              My hope is that I'll work with a mix of young people who have participated in the{' '}
-              <Link href="/program">Workshop Program</Link> and those who haven't.
-            </p>
+            <p>In these early days, we need makers with:</p>
 
-            <p>
-              These sessions will require a fair amount of self autonomy and be guided by the
-              following <Link href="/code-of-conduct">Code of Conduct</Link>.
-            </p>
-
-            <h3>Whats available</h3>
-
-            <p>
-              Some basic tools (like power and Internet access) will be provided to start and I'll
-              have at least one laptop with me plus a few other bits and pieces. I'm working on
-              creating a list of what I have / need. I plan to grow what's available overtime so a
-              BYO DIY attitude will be a must in the early days.
-            </p>
+            <ul>
+              <li>A BYO DIY attitude</li>
+              <li>Willingness to work with evolving resources</li>
+              <li>Enthusiasm for being part of something from the ground up</li>
+            </ul>
           </div>
           <aside className="prose dark:prose-invert">
             <Form
@@ -83,14 +88,30 @@ export default function Makerspace() {
 
             <p>
               Based on demand I'd like to begin offering popup sessions at different locations
-              around the Byron Bay.
+              around the Northern Rivers.
             </p>
 
-            <p>
+            {/* <p>
               For the most part the makerspace will intentionally be delivered off-grid in an
               outdoor learning experience but I am activly scouting locations so please{' '}
               <a href="mailto:info@hellomaker.org">get in touch</a> if you know of somewhere.
-            </p>
+            </p> */}
+
+            <h3>Ways to Support</h3>
+
+            <p>This mobile makerspace is growing through the generosity of our community.</p>
+
+            <ul>
+              <li>
+                <strong>Donate:</strong> Tools, tech, or materials
+              </li>
+              <li>
+                <strong>Host:</strong> Offer a space in your community
+              </li>
+              <li>
+                <strong>Sponsor:</strong> Fund the mobile vision
+              </li>
+            </ul>
           </aside>
         </div>
       </div>

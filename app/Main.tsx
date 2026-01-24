@@ -11,65 +11,80 @@ export default function Home({ posts }) {
         <div className="md:flex gap-8">
           <div className="space-y-2 pb-8 pt-6 md:space-y-5 prose dark:prose-invert">
             <p className="display-m text-lg dark:text-white">
-              <strong>HelloMaker</strong> provides holistic introduction, guidance and support with{' '}
-              <abbr title="STEM represents science, technology, engineering and maths. STEAM represents STEM plus the arts – humanities, language arts, dance, drama, music, visual arts, design and new media">
-                STEAM
-              </abbr>{' '}
-              related disciplines. Journeying from <strong>unplugged</strong> to{' '}
-              <strong>plugged-in</strong> we work to equip young people as creators not just
-              consumers of digital technology.
+              <strong>HelloMaker</strong> helps young people become confident creators, not just
+              consumers, of technology.
             </p>
 
             <p className="dark:text-white">
-              As an unschool dad I'm no expert educator<sup>*</sup> but as a{' '}
-              <a href="https://mischacolley.com.au/" target="_blank" className="dark:text-white">
-                creative technologist
-              </a>{' '}
-              with more than a decade in tech, I'm well placed as a learning guide on this
-              journey...
+              We provide wholistic{' '}
+              <abbr title="STEM represents science, technology, engineering and maths">STEM</abbr>{' '}
+              related education that journeys from unplugged exploration to hands-on making,
+              equipping young people with problem-solving skills and a healthy relationship with
+              digital technology.
             </p>
+
+            <h2>Why HelloMaker?</h2>
 
             <p className="dark:text-white">
-              I want to see young people empowered as confident makers and tinkerers who have a
-              balanced relationship with digital technology and reach for tech as just one off the
-              problem solving tools in their tool belt. I'm designing the HelloMaker learning
-              community to do just that.
+              Technology shouldn't be something that just happens to our young people, it should be
+              a tool they understand and can use creatively. HelloMaker builds this confidence
+              through guided exploration, making, and real-world problem solving.
             </p>
+
+            <h2>Our Program</h2>
 
             <p className="dark:text-white">
-              The <Link href="/program">Program</Link> and{' '}
-              <Link href="/makerspace">Mobile Makerspace</Link> can be delivered to young people in
-              a variety of contexts and formats, including:
+              The HelloMaker experience can be delivered flexibly to suit your needs:
             </p>
 
-            <ul className="dark:text-white">
-              <li>a face-to-face homeschool program</li>
-              <li>one-on-one & group mentoring</li>
-              <li>workshops at schools, festivals & community events</li>
-              <li>as an online experience</li>
+            <ul>
+              <li>Face-to-face Homeschool programs</li>
+              <li>One-on-one and group mentoring</li>
+              <li>School, festival, and community workshops</li>
+              <li>Online learning experiences</li>
             </ul>
 
             <p className="dark:text-white">
-              As it evolves, the intent is for HelloMaker to take young people on a journey from{' '}
-              <Link href="/program/helloexplorer">Explorer</Link> to{' '}
-              <Link href="/program/hellomaker">Maker</Link> to{' '}
-              <Link href="/program/hellochanger">Changer</Link>.
-            </p>
-            <p className="dark:text-white">
-              Moving from the joy of exploring and sense making to acquiring the mindsets and
-              technical skills to be able to bring ideas to life, right through to combining
-              knowledge and skills with critical thinking and the agency to positively interact with
-              and impact the world around them.
+              Our <Link href="/makerspace">Mobile Makerspace Vision</Link> is to work towards
+              bringing hands-on tools and materials directly to learners, espeically those in
+              underserved communities.
             </p>
 
+            <h2>The Journey: Explorer → Maker → Changer</h2>
+
+            <p className="dark:text-white">Young people ideally progress through three stages:</p>
+
+            <ul>
+              <li>
+                <Link href="/program/helloexplorer">Explorer</Link> – Discovering the joy of
+                curiosity and sense-making
+              </li>
+              <li>
+                <Link href="/program/hellomaker">Maker</Link> – Developing mindsets and technical
+                skills to bring ideas to life
+              </li>
+              <li>
+                <Link href="/program/hellochanger">Changer</Link> – Combining knowledge with
+                critical thinking to positively impact their world
+              </li>
+            </ul>
+
+            <h2>Who i am</h2>
+
             <p className="dark:text-white">
-              The intent is to do this while supporting{' '}
-              <Link href="/program/helloparent">parents</Link> along the way.
+              As a{' '}
+              <a href="https://mischacolley.com.au/" target="_blank" className="dark:text-white">
+                creative technologist
+              </a>{' '}
+              with over a decade in tech and an unschooling parent myself, I understand both the
+              technical landscape and the real concerns parents have about their children's
+              relationship with technology. I'm here to guide both young people and their{' '}
+              <Link href="/program/helloparents">parents</Link> through this journey.
             </p>
 
             <small className="mb-8 block dark:text-white">
-              * I come from a long line of teachers, have worked as a mentor with young people
-              previously and I hold a valid Working with Children Check and a First Aid Certificate
+              I come from a long line of teachers, have worked as a mentor with young people
+              previously and I hold a valid Working with Children Check and a First Aid Certificate.
             </small>
           </div>
 
