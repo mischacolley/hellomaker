@@ -1,9 +1,25 @@
-import { sortPosts, allCoreContent } from 'pliny/utils/contentlayer'
-import { allBlogs } from 'contentlayer/generated'
-import Main from './Main'
+import Hero from '@/components/sections/Hero'
+import TrustStrip from '@/components/sections/TrustStrip'
+import Approach from '@/components/sections/Approach'
+import Journey from '@/components/sections/Journey'
+import Formats from '@/components/sections/Formats'
+import ForParents from '@/components/sections/ForParents'
+import SocialProof from '@/components/sections/SocialProof'
+import CtaBand from '@/components/sections/CtaBand'
+import InterestSection from '@/components/sections/InterestSection'
 
-export default async function Page() {
-  const sortedPosts = sortPosts(allBlogs)
-  const posts = allCoreContent(sortedPosts)
-  return <Main posts={posts} />
+export default function Home() {
+  return (
+    <>
+      <Hero />
+      <TrustStrip />
+      <Approach />
+      <Journey />
+      <Formats />
+      <ForParents />
+      <SocialProof />
+      <CtaBand />
+      <InterestSection />
+    </>
+  )
 }

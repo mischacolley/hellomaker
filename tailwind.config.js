@@ -1,94 +1,78 @@
-// @ts-check
-const { fontFamily } = require('tailwindcss/defaultTheme')
-const colors = require('tailwindcss/colors')
-
-/** @type {import("tailwindcss/types").Config } */
+/** @type {import("tailwindcss").Config} */
 module.exports = {
-  content: [
-    './node_modules/pliny/**/*.js',
-    './app/**/*.{js,ts,jsx,tsx}',
-    './pages/**/*.{js,ts,tsx}',
-    './components/**/*.{js,ts,tsx}',
-    './layouts/**/*.{js,ts,tsx}',
-    './data/**/*.mdx',
-  ],
   darkMode: 'class',
+  content: [
+    './app/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+    './data/**/*.{js,ts}',
+  ],
   theme: {
+    container: { center: true, padding: '1.5rem', screens: { '2xl': '72rem' } },
     extend: {
-      lineHeight: {
-        11: '2.75rem',
-        12: '3rem',
-        13: '3.25rem',
-        14: '3.5rem',
-      },
       fontFamily: {
-        sans: ['var(--font-space-grotesk)', ...fontFamily.sans],
+        display: ['var(--font-display)', 'system-ui', 'sans-serif'],
+        body: ['var(--font-body)', 'system-ui', 'sans-serif'],
       },
       colors: {
-        primary: colors.sky,
-        gray: colors.gray,
-        brand: '#f8b500'
+        background: 'hsl(var(--background))',
+        foreground: 'hsl(var(--foreground))',
+        border: 'hsl(var(--border))',
+        input: 'hsl(var(--input))',
+        ring: 'hsl(var(--ring))',
+        card: { DEFAULT: 'hsl(var(--card))', foreground: 'hsl(var(--card-foreground))' },
+        popover: { DEFAULT: 'hsl(var(--popover))', foreground: 'hsl(var(--popover-foreground))' },
+        primary: {
+          DEFAULT: 'hsl(var(--primary))',
+          foreground: 'hsl(var(--primary-foreground))',
+          strong: 'hsl(var(--primary-strong))',
+        },
+        secondary: { DEFAULT: 'hsl(var(--secondary))', foreground: 'hsl(var(--secondary-foreground))' },
+        muted: { DEFAULT: 'hsl(var(--muted))', foreground: 'hsl(var(--muted-foreground))' },
+        accent: {
+          DEFAULT: 'hsl(var(--accent))',
+          foreground: 'hsl(var(--accent-foreground))',
+          soft: 'hsl(var(--accent-soft))',
+        },
+        destructive: { DEFAULT: 'hsl(var(--destructive))', foreground: 'hsl(var(--destructive-foreground))' },
+        explorer: { DEFAULT: 'hsl(var(--explorer))', soft: 'hsl(var(--explorer-soft))' },
+        maker: { DEFAULT: 'hsl(var(--maker))', soft: 'hsl(var(--maker-soft))' },
+        changer: { DEFAULT: 'hsl(var(--changer))', soft: 'hsl(var(--changer-soft))' },
+      },
+      borderRadius: {
+        sm: 'calc(var(--radius) - 8px)',
+        md: 'calc(var(--radius) - 4px)',
+        lg: 'var(--radius)',
+        xl: 'calc(var(--radius) + 4px)',
+        '2xl': 'calc(var(--radius) + 8px)',
+      },
+      boxShadow: { card: 'var(--card-shadow)', 'card-hover': 'var(--card-shadow-hover)' },
+      maxWidth: { prose: '68ch' },
+      keyframes: {
+        'accordion-down': { from: { height: '0' }, to: { height: 'var(--radix-accordion-content-height)' } },
+        'accordion-up': { from: { height: 'var(--radix-accordion-content-height)' }, to: { height: '0' } },
+        'fade-up': { from: { opacity: '0', transform: 'translateY(12px)' }, to: { opacity: '1', transform: 'none' } },
+      },
+      animation: {
+        'accordion-down': 'accordion-down 0.2s ease-out',
+        'accordion-up': 'accordion-up 0.2s ease-out',
+        'fade-up': 'fade-up 0.5s ease-out both',
       },
       typography: ({ theme }) => ({
         DEFAULT: {
           css: {
-            a: {
-              color: theme('colors.primary.500'),
-              '&:hover': {
-                color: `${theme('colors.primary.600')}`,
-              },
-              code: { color: theme('colors.primary.400') },
-            },
-            'h1,h2': {
-              fontWeight: '700',
-              letterSpacing: theme('letterSpacing.tight'),
-            },
-            h3: {
-              fontWeight: '600',
-            },
-            code: {
-              color: theme('colors.indigo.500'),
-            },
-          },
-        },
-        invert: {
-          css: {
-            color: theme('colors.white'),
-            a: {
-              color: theme('colors.primary.500'),
-              '&:hover': {
-                color: `${theme('colors.primary.400')}`,
-              },
-              code: { color: theme('colors.primary.400') },
-            },
-            'h1,h2,h3,h4,h5,h6': {
-              color: theme('colors.white'),
-            },
-            p: {
-              color: theme('colors.white'),
-            },
-            strong: {
-              color: theme('colors.white'),
-            },
-            em: {
-              color: theme('colors.white'),
-            },
-            blockquote: {
-              color: theme('colors.white'),
-            },
-            ul: {
-              color: theme('colors.white'),
-            },
-            ol: {
-              color: theme('colors.white'),
-            },
-            li: {
-              color: theme('colors.white'),
-            },
+            '--tw-prose-body': theme('colors.foreground'),
+            '--tw-prose-headings': theme('colors.foreground'),
+            '--tw-prose-bold': theme('colors.foreground'),
+            '--tw-prose-bullets': theme('colors.border'),
+            '--tw-prose-quotes': theme('colors.foreground'),
+            '--tw-prose-links': theme('colors.primary.strong'),
+            maxWidth: '68ch',
+            a: { fontWeight: '500', textUnderlineOffset: '2px' },
+            'h2,h3,h4': { fontFamily: 'var(--font-display)', fontWeight: '800' },
           },
         },
       }),
     },
   },
-  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+  plugins: [require('@tailwindcss/typography'), require('tailwindcss-animate')],
 }

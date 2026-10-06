@@ -1,120 +1,155 @@
-import { genPageMetadata } from 'app/seo'
 import Link from 'next/link'
+import { ArrowRight } from 'lucide-react'
+import { genPageMetadata } from '@/app/seo'
+import siteMetadata from '@/data/siteMetadata'
+import PageHeader from '@/components/PageHeader'
 import Form from '@/components/Form'
+import { Button } from '@/components/ui/button'
+import { Container, Section, SectionHeading } from '@/components/Container'
 
-export const metadata = genPageMetadata({ title: 'Mobile Makerspace' })
+export const metadata = genPageMetadata({
+  title: 'Mobile Makerspace',
+  description:
+    'A welcoming, self-directed space where young makers gather to explore, experiment and bring their own ideas to life — working towards a mobile makerspace for regional and remote communities.',
+  path: '/makerspace',
+})
 
-export default function Makerspace() {
+const expectations = [
+  'Self-directed learning, with guidance when it is wanted',
+  'Multi-session projects that develop over time',
+  'A supportive environment guided by our Code of Conduct',
+  'Opportunities to share, teach and collaborate',
+]
+
+const earlyDays = [
+  'A BYO DIY attitude',
+  'Willingness to work with evolving resources',
+  'Enthusiasm for being part of something from the ground up',
+]
+
+export default function MakerspacePage() {
   return (
     <>
-      <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="md:flex gap-8">
-          <div className="space-y-2 pb-8 pt-6 md:space-y-5 prose dark:prose-invert">
-            {/* <nav>
-            <Link href="/projects/hellomaker">Projects | HelloMaker</Link>
-          </nav> */}
-            <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-white sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-              Mobile Makerspace
-            </h1>
+      <PageHeader
+        eyebrow="Mobile Makerspace"
+        title="Learning happens in the spaces in-between"
+        lede="A welcoming environment where young makers gather regularly to explore, experiment and bring their ideas to life."
+      >
+        <div className="pt-1">
+          <Form
+            filloutId={siteMetadata.forms.general}
+            buttonText="Express interest"
+            parameters={{ offer: 'Mobile Makerspace' }}
+            trackAs="makerspace-header"
+          />
+        </div>
+      </PageHeader>
 
-            <p className="text-xl italic">Learning happens in the spaces in-between</p>
-
+      <Container className="py-14 md:py-20">
+        <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr] lg:gap-16">
+          <div className="prose max-w-prose">
             <p>
-              As an unschooling parent, I've seen firsthand how powerful learning becomes when it
-              emerges from boredom, curiosity, failure, and genuine interest. There's no better
-              companion to this philosophy than the Maker Movement. Where young people learn by
-              doing, building, and creating together.
+              As an unschooling parent, I&rsquo;ve seen firsthand how powerful learning becomes when
+              it emerges from boredom, curiosity, failure and genuine interest. There&rsquo;s no
+              better companion to that than the Maker Movement, where young people learn by doing,
+              building and creating together.
             </p>
 
+            <h2>What we&rsquo;ll create together</h2>
             <p>
-              My vision is to establish a mobile makerspace: a welcoming environment where young
-              makers can gather regularly to explore, experiment, and bring their ideas to life.
+              In casual, supportive group sessions, young people explore STEAM topics through
+              hands-on making. Art and craft, multimedia, visual design, robotics, coding, web
+              development, or a fusion of interests &mdash; each maker sets their own learning
+              intention and chooses projects that genuinely excite them.
+            </p>
+            <p>
+              These sessions welcome both <Link href="/program">program</Link> alumni and newcomers,
+              building a diverse community of makers learning from and inspiring each other.
             </p>
 
-            <h3>What we'll create together</h3>
-
-            <p>
-              In casual, supportive group sessions, young people will explore STEM related topics
-              through hands-on making. Whether it's art and craft, multimedia, visual design,
-              robotics, coding, web development, or a fusion of interests, each maker sets their own
-              learning intention and chooses projects that genuinely excite them.
-            </p>
-
-            <p>
-              These sessions welcome both <Link href="/program">Workshop Program</Link> alumni and
-              newcomers, building a diverse community of makers learning from and inspiring each
-              other.
-            </p>
-
-            <p>What to expect:</p>
-
+            <h3>What to expect</h3>
             <ul>
-              <li>Self-directed learning with guidance when needed</li>
-              <li>Multi-session projects that develop over time</li>
-              <li>
-                A supportive environment guided by our{' '}
-                <Link href="/code-of-conduct">Code of Conduct</Link>
-              </li>
-              <li>Opportunities to share, teach, and collaborate</li>
+              {expectations.map((item) => (
+                <li key={item}>
+                  {item === 'A supportive environment guided by our Code of Conduct' ? (
+                    <>
+                      A supportive environment guided by our{' '}
+                      <Link href="/code-of-conduct">Code of Conduct</Link>
+                    </>
+                  ) : (
+                    item
+                  )}
+                </li>
+              ))}
             </ul>
 
-            <h3>Where we're headed</h3>
-
+            <h2>Where we&rsquo;re headed</h2>
             <p>
-              Right now, we're starting with the essentials: curiosity and imagination. We'll also
-              have power, internet access, a laptop, and a growing collection of tools and
-              materials. I'll be building our inventory thoughtfully, with plans to expand into a
-              fully-equipped mobile makerspace. The vision is a trailer that can serve as an outdoor
-              classroom and allow us to work with underserved communities across regional and remote
+              Right now we&rsquo;re starting with the essentials: curiosity and imagination. Plus
+              power, internet access, a laptop and a growing collection of tools and materials.
+              I&rsquo;m building the inventory thoughtfully, with plans to expand into a
+              fully-equipped mobile makerspace &mdash; a trailer that can serve as an outdoor
+              classroom and let us work with underserved communities across regional and remote
               areas.
             </p>
 
-            <p>In these early days, we need makers with:</p>
-
+            <h3>In these early days</h3>
+            <p>We need makers with:</p>
             <ul>
-              <li>A BYO DIY attitude</li>
-              <li>Willingness to work with evolving resources</li>
-              <li>Enthusiasm for being part of something from the ground up</li>
+              {earlyDays.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
             </ul>
           </div>
-          <aside className="prose dark:prose-invert">
-            <Form
-              buttonText="Express Interest"
-              filloutId="8926s4Ngckus"
-              parameters={{ offer: 'Mobile Makerspace' }}
-            />
 
-            <h3>Where, When & How</h3>
+          <aside className="flex flex-col gap-6">
+            <div className="flex flex-col gap-4 rounded-2xl border border-border bg-card p-6 shadow-card">
+              <h2 className="text-lg">Where, when &amp; how</h2>
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                Based on demand, I&rsquo;d like to begin offering popup sessions at different
+                locations around the {siteMetadata.region}.
+              </p>
+              <Form
+                filloutId={siteMetadata.forms.general}
+                buttonText="Express interest"
+                className="w-full"
+                parameters={{ offer: 'Mobile Makerspace' }}
+                trackAs="makerspace-aside"
+              />
+            </div>
 
-            <p>
-              Based on demand I'd like to begin offering popup sessions at different locations
-              around the Northern Rivers.
-            </p>
-
-            {/* <p>
-              For the most part the makerspace will intentionally be delivered off-grid in an
-              outdoor learning experience but I am activly scouting locations so please{' '}
-              <a href="mailto:info@hellomaker.org">get in touch</a> if you know of somewhere.
-            </p> */}
-
-            <h3>Ways to Support</h3>
-
-            <p>This mobile makerspace is growing through the generosity of our community.</p>
-
-            <ul>
-              <li>
-                <strong>Donate:</strong> Tools, tech, or materials
-              </li>
-              <li>
-                <strong>Host:</strong> Offer a space in your community
-              </li>
-              <li>
-                <strong>Sponsor:</strong> Fund the mobile vision
-              </li>
-            </ul>
+            <div className="flex flex-col gap-4 rounded-2xl border border-border bg-secondary/60 p-6">
+              <h2 className="text-lg">Want to help build it?</h2>
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                The makerspace is growing through the generosity of our community &mdash; donated
+                tools, offered spaces, and sponsorship towards the trailer.
+              </p>
+              <Button asChild variant="outline" className="w-fit rounded-full">
+                <Link href="/support">
+                  Ways to support
+                  <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
+                </Link>
+              </Button>
+            </div>
           </aside>
         </div>
-      </div>
+      </Container>
+
+      <Section tone="muted">
+        <div className="mx-auto flex max-w-2xl flex-col items-center gap-5 text-center">
+          <SectionHeading eyebrow="Popup sessions" title="Be first to know" />
+          <p className="text-lg text-muted-foreground">
+            Register your interest and I&rsquo;ll let you know when sessions open near you.
+          </p>
+          <Form
+            filloutId={siteMetadata.forms.general}
+            buttonText="Express interest"
+            size="lg"
+            parameters={{ offer: 'Mobile Makerspace' }}
+            trackAs="makerspace-footer"
+          />
+        </div>
+      </Section>
     </>
   )
 }

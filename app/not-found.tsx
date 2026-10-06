@@ -1,25 +1,26 @@
-import Link from '@/components/Link'
+import Link from 'next/link'
+import { Button } from '@/components/ui/button'
+import { Container } from '@/components/Container'
 
 export default function NotFound() {
   return (
-    <div className="flex flex-col items-start justify-start md:mt-24 md:flex-row md:items-center md:justify-center md:space-x-6">
-      <div className="space-x-2 pb-8 pt-6 md:space-y-5">
-        <h1 className="text-6xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-white md:border-r-2 md:px-6 md:text-8xl md:leading-14">
-          404
-        </h1>
+    <Container className="flex flex-col items-start gap-6 py-24 md:py-32">
+      <p className="font-display text-sm font-extrabold uppercase tracking-[0.15em] text-primary-strong">
+        404
+      </p>
+      <h1 className="max-w-xl text-3xl md:text-5xl">We couldn&rsquo;t find that page</h1>
+      <p className="max-w-prose text-lg text-muted-foreground">
+        The link may be out of date. The program, the workshops and the Mobile Makerspace are all a
+        click away.
+      </p>
+      <div className="flex flex-wrap gap-3">
+        <Button asChild className="rounded-full">
+          <Link href="/">Back to home</Link>
+        </Button>
+        <Button asChild variant="outline" className="rounded-full">
+          <Link href="/program">See the program</Link>
+        </Button>
       </div>
-      <div className="max-w-md">
-        <p className="mb-4 text-xl font-bold leading-normal md:text-2xl">
-          Sorry we couldn't find this page.
-        </p>
-        <p className="mb-8">But dont worry, you can find plenty of other things on our homepage.</p>
-        <Link
-          href="/"
-          className="focus:shadow-outline-blue inline rounded-lg border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium leading-5 text-white shadow transition-colors duration-150 hover:bg-blue-700 focus:outline-none dark:hover:bg-blue-500"
-        >
-          Back to homepage
-        </Link>
-      </div>
-    </div>
+    </Container>
   )
 }

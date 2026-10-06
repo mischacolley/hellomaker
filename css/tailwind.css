@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  HelloMaker design system.
+  Ported from the Lovable prototype, re-grounded on the actual logo colours
+  (#f8b500 amber / #393e46 slate) and corrected for contrast: amber is far too
+  light to carry white text, so --primary-foreground is near-black slate and a
+  darker --primary-strong exists for amber used as body-size text.
+*/
+
+@layer base {
+  :root {
+    /* Warm paper ground + slate ink */
+    --background: 40 33% 98%;
+    --foreground: 220 15% 16%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 16%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 16%;
+
+    /* Brand amber — #f8b500 is hsl(44 100% 49%). Needs DARK text on it. */
+    --primary: 44 100% 49%;
+    --primary-foreground: 220 20% 12%;
+    --primary-strong: 36 72% 32%; /* amber dark enough to read as text/links */
+
+    --secondary: 40 30% 94%;
+    --secondary-foreground: 220 15% 20%;
+
+    --muted: 40 20% 93%;
+    --muted-foreground: 220 10% 42%;
+
+    /* Teal — the one colour both prototypes independently agreed on */
+    --accent: 174 58% 30%;
+    --accent-foreground: 0 0% 100%;
+    --accent-soft: 174 45% 94%;
+
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 38 22% 88%;
+    --input: 38 22% 84%;
+    --ring: 44 100% 42%;
+
+    --radius: 1rem;
+
+    /* Journey stage identities: warm start -> cool middle -> deep end.
+       Amber stays reserved for calls to action so stage colour keeps meaning. */
+    --explorer: 32 88% 34%;
+    --explorer-soft: 32 80% 95%;
+    --maker: 174 58% 30%;
+    --maker-soft: 174 45% 94%;
+    --changer: 268 40% 46%;
+    --changer-soft: 268 45% 96%;
+
+    --card-shadow: 0 2px 4px -2px hsl(220 20% 16% / 0.05), 0 8px 24px -8px hsl(220 20% 16% / 0.1);
+    --card-shadow-hover: 0 4px 8px -2px hsl(220 20% 16% / 0.07), 0 16px 36px -10px hsl(220 20% 16% / 0.14);
+  }
+
+  .dark {
+    --background: 222 18% 10%;
+    --foreground: 40 25% 94%;
+
+    --card: 222 16% 14%;
+    --card-foreground: 40 25% 94%;
+    --popover: 222 16% 14%;
+    --popover-foreground: 40 25% 94%;
+
+    --primary: 44 100% 55%;
+    --primary-foreground: 222 25% 10%;
+    --primary-strong: 44 95% 62%;
+
+    --secondary: 222 14% 19%;
+    --secondary-foreground: 40 25% 90%;
+
+    --muted: 222 12% 20%;
+    --muted-foreground: 220 10% 64%;
+
+    --accent: 174 52% 44%;
+    --accent-foreground: 222 25% 10%;
+    --accent-soft: 174 35% 18%;
+
+    --destructive: 0 62% 52%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 222 12% 24%;
+    --input: 222 12% 28%;
+    --ring: 44 100% 55%;
+
+    --explorer: 32 85% 56%;
+    --explorer-soft: 32 40% 18%;
+    --maker: 174 52% 44%;
+    --maker-soft: 174 35% 18%;
+    --changer: 268 50% 66%;
+    --changer-soft: 268 25% 20%;
+
+    --card-shadow: 0 2px 4px -2px hsl(0 0% 0% / 0.3), 0 8px 24px -8px hsl(0 0% 0% / 0.4);
+    --card-shadow-hover: 0 4px 8px -2px hsl(0 0% 0% / 0.35), 0 16px 36px -10px hsl(0 0% 0% / 0.5);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    font-synthesis-weight: none;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display font-extrabold tracking-tight;
+    text-wrap: balance;
+  }
+  /* Visible keyboard focus everywhere, not just on shadcn primitives */
+  :focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -44,4 +44,6 @@ yarn-error.log*
 .env.production.local
 
 # Contentlayer
-.contentlayer
+
+# typescript
+*.tsbuildinfo
