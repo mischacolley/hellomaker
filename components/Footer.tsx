@@ -20,7 +20,7 @@ export default function Footer() {
                 className="h-9 w-9"
               />
               <span className="font-display text-lg font-extrabold tracking-tight">
-                Hello<span className="text-primary-strong">Maker</span>
+                <span className="text-muted-foreground">Hello</span>Maker
               </span>
             </Link>
             <p className="max-w-xs text-sm leading-relaxed text-muted-foreground">

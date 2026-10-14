@@ -33,7 +33,7 @@ export default function Header() {
               priority
             />
             <span className="font-display text-lg font-extrabold tracking-tight md:text-xl">
-              Hello<span className="text-primary-strong">Maker</span>
+              <span className="text-muted-foreground">Hello</span>Maker
             </span>
           </Link>
 
