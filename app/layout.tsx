@@ -10,14 +10,12 @@ import Footer from '@/components/Footer'
 // workhorse that keeps 600-word program pages readable at 17px.
 const display = Nunito({
   subsets: ['latin'],
-  weight: ['700', '800'],
   display: 'swap',
   variable: '--font-display',
 })
 
 const body = DM_Sans({
   subsets: ['latin'],
-  weight: ['400', '500', '600'],
   display: 'swap',
   variable: '--font-body',
 })

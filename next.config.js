@@ -2,10 +2,16 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
 
+// React's development build uses eval() for debugging features (reconstructing
+// callstacks across environments), so dev needs 'unsafe-eval' or the page dies
+// on a CSP violation. Production React never calls eval — keep it out of the
+// shipped policy.
+const isDev = process.env.NODE_ENV === 'development'
+
 // Fillout serves the interest form in an iframe; Umami is our analytics provider.
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' 'unsafe-inline' analytics.umami.is;
+  script-src 'self' 'unsafe-inline' ${isDev ? "'unsafe-eval' " : ''}analytics.umami.is;
   style-src 'self' 'unsafe-inline';
   img-src 'self' blob: data:;
   font-src 'self';
