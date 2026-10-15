@@ -16,8 +16,8 @@ export default function Journey() {
       </SectionHeading>
 
       <ul className="mt-14 grid gap-6 md:grid-cols-3">
-        {stages.map((stage, i) => (
-          <StageCard key={stage.slug} stage={stage} index={i} />
+        {stages.map((stage) => (
+          <StageCard key={stage.slug} stage={stage} />
         ))}
       </ul>
     </Section>

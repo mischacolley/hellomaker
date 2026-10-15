@@ -7,6 +7,7 @@ import siteMetadata from '@/data/siteMetadata'
 import { stages, getStage } from '@/data/stages'
 import PageHeader from '@/components/PageHeader'
 import Form from '@/components/Form'
+import HexIcon, { HexBullet } from '@/components/HexIcon'
 import { Button } from '@/components/ui/button'
 import { Container, Section, SectionHeading } from '@/components/Container'
 import { cn } from '@/lib/utils'
@@ -28,9 +29,9 @@ export async function generateMetadata({ params }: { params: Promise<{ stage: st
 }
 
 const tones = {
-  explorer: { chip: 'bg-explorer-soft text-explorer', mark: 'bg-explorer' },
-  maker: { chip: 'bg-maker-soft text-maker', mark: 'bg-maker' },
-  changer: { chip: 'bg-changer-soft text-changer', mark: 'bg-changer' },
+  explorer: { hex: 'text-explorer-soft', glyph: 'text-explorer' },
+  maker: { hex: 'text-maker-soft', glyph: 'text-maker' },
+  changer: { hex: 'text-changer-soft', glyph: 'text-changer' },
 } as const
 
 export default async function StagePage({ params }: { params: Promise<{ stage: string }> }) {
@@ -50,14 +51,16 @@ export default async function StagePage({ params }: { params: Promise<{ stage: s
         breadcrumbs={[{ href: '/program', title: 'Program' }]}
       >
         <div className="flex flex-wrap items-center gap-3">
-          <span
-            className={cn(
-              'inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-sm font-semibold',
-              tone.chip
-            )}
-          >
-            <span className={cn('h-1.5 w-1.5 rounded-full', tone.mark)} aria-hidden="true" />
-            Stage {index + 1} &middot; {stage.stageName}
+          <span className="inline-flex items-center gap-2.5">
+            <HexIcon
+              icon={stage.icon}
+              toneClassName={tone.hex}
+              iconClassName={tone.glyph}
+              className="h-9 w-9"
+            />
+            <span className={cn('text-sm font-semibold uppercase tracking-wide', tone.glyph)}>
+              {stage.stageName}
+            </span>
           </span>
           {stage.ages && <span className="text-sm text-muted-foreground">{stage.ages}</span>}
         </div>
@@ -84,10 +87,7 @@ export default async function StagePage({ params }: { params: Promise<{ stage: s
             <ul className="mt-1 grid gap-2 sm:grid-cols-2">
               {stage.topics.map((topic) => (
                 <li key={topic} className="flex items-start gap-2.5 text-sm leading-relaxed">
-                  <span
-                    className={cn('mt-[0.45rem] h-1.5 w-1.5 shrink-0 rounded-full', tone.mark)}
-                    aria-hidden="true"
-                  />
+                  <HexBullet className={cn('mt-[0.4rem]', tone.glyph)} />
                   {topic}
                 </li>
               ))}

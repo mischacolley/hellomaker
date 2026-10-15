@@ -1,5 +1,6 @@
 import { pillars } from '@/data/approach'
 import { Section, SectionHeading } from '@/components/Container'
+import HexIcon from '@/components/HexIcon'
 
 export default function Approach() {
   return (
@@ -18,9 +19,7 @@ export default function Approach() {
             key={pillar.title}
             className="flex flex-col gap-4 rounded-2xl border border-border bg-card p-6 shadow-card"
           >
-            <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent-soft">
-              <pillar.icon className="h-6 w-6 text-accent" aria-hidden="true" />
-            </span>
+            <HexIcon icon={pillar.icon} />
             <h3 className="text-lg">{pillar.title}</h3>
             <p className="text-sm leading-relaxed text-muted-foreground">{pillar.description}</p>
           </li>

@@ -19,9 +19,7 @@ export default function Formats() {
             key={format.title}
             className="flex flex-col gap-4 rounded-2xl border border-border bg-card p-6 shadow-card transition-shadow hover:shadow-card-hover"
           >
-            <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent-soft">
-              <format.icon className="h-6 w-6 text-accent" aria-hidden="true" />
-            </span>
+            <HexIcon icon={format.icon} />
             <h3 className="text-lg">
               {format.href ? (
                 <Link href={format.href} className="transition-colors hover:text-primary-strong">

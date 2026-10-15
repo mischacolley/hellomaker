@@ -25,6 +25,7 @@
     --primary: 44 100% 49%;
     --primary-foreground: 220 20% 12%;
     --primary-strong: 36 72% 32%; /* amber dark enough to read as text/links */
+    --primary-soft: 44 90% 91%; /* pale amber wash for icon grounds */
 
     --secondary: 40 30% 94%;
     --secondary-foreground: 220 15% 20%;
@@ -46,14 +47,17 @@
 
     --radius: 1rem;
 
-    /* Journey stage identities: warm start -> cool middle -> deep end.
-       Amber stays reserved for calls to action so stage colour keeps meaning. */
-    --explorer: 32 88% 34%;
-    --explorer-soft: 32 80% 95%;
-    --maker: 174 58% 30%;
-    --maker-soft: 174 45% 94%;
-    --changer: 268 40% 46%;
-    --changer-soft: 268 45% 96%;
+    /* Journey stage identities, anchored on the brand rather than spread across
+       unrelated hue families: warm earth -> eucalypt -> the logo slate, deepened.
+       Saturation falls as the journey deepens (55/42/30) so the ramp reads as
+       natural material, not as three competing accent colours. Amber stays
+       reserved for calls to action so stage colour keeps meaning. */
+    --explorer: 24 55% 34%;
+    --explorer-soft: 26 48% 95%;
+    --maker: 166 42% 29%;
+    --maker-soft: 166 34% 94%;
+    --changer: 212 30% 31%;
+    --changer-soft: 212 26% 94%;
 
     --card-shadow: 0 2px 4px -2px hsl(220 20% 16% / 0.05), 0 8px 24px -8px hsl(220 20% 16% / 0.1);
     --card-shadow-hover: 0 4px 8px -2px hsl(220 20% 16% / 0.07), 0 16px 36px -10px hsl(220 20% 16% / 0.14);
@@ -71,6 +75,7 @@
     --primary: 44 100% 55%;
     --primary-foreground: 222 25% 10%;
     --primary-strong: 44 95% 62%;
+    --primary-soft: 44 28% 18%;
 
     --secondary: 222 14% 19%;
     --secondary-foreground: 40 25% 90%;
@@ -89,12 +94,12 @@
     --input: 222 12% 28%;
     --ring: 44 100% 55%;
 
-    --explorer: 32 85% 56%;
-    --explorer-soft: 32 40% 18%;
-    --maker: 174 52% 44%;
-    --maker-soft: 174 35% 18%;
-    --changer: 268 50% 66%;
-    --changer-soft: 268 25% 20%;
+    --explorer: 24 58% 62%;
+    --explorer-soft: 24 28% 18%;
+    --maker: 166 40% 52%;
+    --maker-soft: 166 28% 17%;
+    --changer: 212 38% 64%;
+    --changer-soft: 212 24% 19%;
 
     --card-shadow: 0 2px 4px -2px hsl(0 0% 0% / 0.3), 0 8px 24px -8px hsl(0 0% 0% / 0.4);
     --card-shadow-hover: 0 4px 8px -2px hsl(0 0% 0% / 0.35), 0 16px 36px -10px hsl(0 0% 0% / 0.5);
