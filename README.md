@@ -78,3 +78,24 @@ cost-per-lead can be read per audience rather than per site.
 - `next.config.js` holds the CSP. Any new third-party origin (a font host, a video embed, a new
   analytics provider) has to be added there or the browser will block it.
 - Old URLs from the previous structure 308-redirect in `next.config.js` — keep those entries.
+
+## Logo assets
+
+| File | Use |
+| --- | --- |
+| `public/assets/logo-hellomaker.svg` | The badge on its own. What the header, footer and favicon use. |
+| `public/assets/logo-hellomaker-lockup.svg` | Badge and wordmark together, for anywhere outside the site: Canva, social profiles, print, slide decks. |
+| `public/assets/logo-hellomaker-lockup-reversed.svg` | The same lockup for dark backgrounds. |
+
+The site itself does **not** use the lockup. The header sets the wordmark as live
+text beside the badge so it reflows and stays selectable; the lockup exists so
+external material matches it exactly.
+
+In the lockup the wordmark is Nunito ExtraBold converted to outlines, so it needs
+no font installed and cannot reflow or substitute. Proportions are taken from the
+header: wordmark at half the badge height, gap a quarter of it, cap height centred
+on the badge, letter-spacing `-0.025em`. It is trimmed to the ink, so add clear
+space of at least half the badge width when placing it.
+
+Editing the badge means regenerating both lockups, since the badge geometry is
+embedded in them.
