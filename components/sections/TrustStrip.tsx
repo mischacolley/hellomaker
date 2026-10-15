@@ -6,13 +6,19 @@ export default function TrustStrip() {
     <div className="border-y border-border bg-card py-8">
       <Container>
         <h2 className="sr-only">Credentials</h2>
-        <ul className="grid grid-cols-2 gap-6 sm:grid-cols-4">
+        {/* Four columns only once there is room for them. At the old sm: breakpoint
+            each column was ~130px of text, which wrapped "Working with Children
+            Check" onto four lines. Two columns hold it on one line until lg. */}
+        <ul className="grid grid-cols-2 gap-x-6 gap-y-7 lg:grid-cols-4">
           {trustMarkers.map((marker) => (
-            <li key={marker.label} className="flex items-start gap-3">
+            <li key={marker.label} className="flex items-center gap-3.5">
+              {/* Sized to the full two-line text block (~39px) rather than one line,
+                  so the icon and the text start and finish together. The lighter
+                  stroke keeps a 40px glyph from overpowering 14px type. */}
               <marker.icon
-                className="mt-0.5 h-5 w-5 shrink-0 text-accent"
+                className="h-10 w-10 shrink-0 text-foreground"
                 aria-hidden="true"
-                strokeWidth={2}
+                strokeWidth={1.5}
               />
               <span className="text-sm">
                 <span className="block font-semibold leading-snug">{marker.label}</span>

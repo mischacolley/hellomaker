@@ -10,7 +10,7 @@ import { Container, Section, SectionHeading } from '@/components/Container'
 export const metadata = genPageMetadata({
   title: 'About',
   description:
-    'HelloMaker is run by Mischa Colley — a creative technologist of 15+ years and an unschooling parent, working with young people in the Northern Rivers.',
+    'HelloMaker is run by Mischa Colley, a creative technologist of 10+ years and an unschooling parent, working with young people in the Northern Rivers.',
   path: '/about',
 })
 
@@ -98,7 +98,7 @@ export default function AboutPage() {
                 {trustMarkers.map((marker) => (
                   <li key={marker.label} className="flex items-start gap-3">
                     <marker.icon
-                      className="mt-0.5 h-5 w-5 shrink-0 text-accent"
+                      className="mt-0.5 h-5 w-5 shrink-0 text-foreground"
                       aria-hidden="true"
                     />
                     <span className="text-sm">
