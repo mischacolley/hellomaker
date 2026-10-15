@@ -3,7 +3,7 @@
  * /program; each is now a discrete, searchable, advertisable product.
  *
  * `featured: true` marks the three we lead with and build dedicated landing
- * pages for first. TODO(decide): confirm which three — relaunch plan, section 10.
+ * pages for first. TODO(decide): confirm which three. See the relaunch plan, section 10.
  */
 export type Workshop = {
   slug: string
@@ -34,7 +34,7 @@ export const workshops: Workshop[] = [
     slug: 'staying-safe-online',
     title: 'Staying Safe Online',
     blurb:
-      'Practical, non-alarmist skills for the situations young people actually encounter — and the confidence to ask for help.',
+      'Practical, non-alarmist skills for the situations young people actually encounter, and the confidence to ask for help.',
     themes: ['Privacy', 'Scams & manipulation', 'Asking for help'],
     featured: true,
   },
@@ -56,7 +56,7 @@ export const workshops: Workshop[] = [
     slug: 'thinking-in-systems',
     title: 'Thinking in Systems',
     blurb:
-      'Seeing the whole rather than the parts — feedback loops, side effects, and why complicated things behave the way they do.',
+      'Seeing the whole rather than the parts: feedback loops, side effects, and why complicated things behave the way they do.',
     themes: ['Feedback loops', 'Consequences', 'Mapping'],
   },
   {

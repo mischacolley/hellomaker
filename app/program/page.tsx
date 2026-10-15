@@ -14,7 +14,7 @@ import { Section, SectionHeading } from '@/components/Container'
 export const metadata = genPageMetadata({
   title: 'The program',
   description:
-    'Three progressive stages — Explorer, Maker and Changer — taking young people from unplugged exploration to confident, critical making.',
+    'Three progressive stages (Explorer, Maker and Changer) taking young people from unplugged exploration to confident, critical making.',
   path: '/program',
 })
 
@@ -43,7 +43,7 @@ export default function ProgramPage() {
         <SectionHeading eyebrow="Three stages" title="Explorer, Maker, Changer">
           <p>
             Each stage builds the skills and mindsets for the next. Young people join at the level
-            that fits them &mdash; prior stages are helpful, not required.
+            that fits them. Prior stages are helpful, not required.
           </p>
         </SectionHeading>
         <ul className="mt-14 grid gap-6 md:grid-cols-3">

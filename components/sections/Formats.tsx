@@ -1,13 +1,14 @@
 import Link from 'next/link'
 import { formats } from '@/data/formats'
 import { Section, SectionHeading } from '@/components/Container'
+import HexIcon from '@/components/HexIcon'
 
 export default function Formats() {
   return (
     <Section id="formats">
       <SectionHeading eyebrow="How it works" title="Flexible delivery for every family">
         <p>
-          The HelloMaker experience can be delivered in whichever way suits you &mdash; from a
+          The HelloMaker experience can be delivered in whichever way suits you, from a
           regular face-to-face series to a one-off workshop at your school or festival.
         </p>
       </SectionHeading>

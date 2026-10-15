@@ -11,7 +11,7 @@ export const metadata = genPageMetadata({
 })
 
 /*
-  DRAFT — needs your review and sign-off before launch.
+  DRAFT: needs your review and sign-off before launch.
 
   This replaces the "Lorem ispum" placeholder that was publicly linked from the
   Makerspace page. It is written to be genuinely usable rather than to fill
@@ -30,7 +30,7 @@ export default function CodeOfConductPage() {
       <PageHeader
         eyebrow="Code of Conduct"
         title="How we treat each other"
-        lede="HelloMaker sessions work because everyone in the room — young people, parents and me — knows what to expect. This is that agreement, in plain language."
+        lede="HelloMaker sessions work because everyone in the room (young people, parents and me) knows what to expect. This is that agreement, in plain language."
       />
 
       <Container className="py-14 md:py-20">
@@ -112,7 +112,7 @@ export default function CodeOfConductPage() {
           <ul>
             <li>
               Stay contactable for the length of the session, and let me know in advance about
-              anything that helps me support your young person well &mdash; medical needs, access
+              anything that helps me support your young person well: medical needs, access
               needs, triggers, or simply what a hard day looks like for them.
             </li>
             <li>
@@ -147,7 +147,7 @@ export default function CodeOfConductPage() {
           <p>
             Neurodivergent makers, makers with disabilities, and makers who need to move, fidget,
             step out or work in silence are all welcome. Tell me what helps and I will work with it.
-            If cost is the barrier, say so &mdash; email me and we will have a quiet conversation
+            If cost is the barrier, say so. Email me and we will have a quiet conversation
             about it.
           </p>
 

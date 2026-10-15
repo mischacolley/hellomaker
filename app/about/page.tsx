@@ -27,7 +27,7 @@ export default function AboutPage() {
       <PageHeader
         eyebrow="About"
         title="Hi, I'm Mischa"
-        lede="HelloMaker came out of fifteen years of casually exploring education, schooling and learning through an alternative lens — and out of being a parent to two young people of my own."
+        lede="HelloMaker came out of fifteen years of casually exploring education, schooling and learning through an alternative lens, and out of being a parent to two young people of my own."
       />
 
       <Container className="py-14 md:py-20">

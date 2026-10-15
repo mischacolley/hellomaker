@@ -24,7 +24,7 @@ export default function ThanksPage() {
       <span className="flex h-16 w-16 items-center justify-center rounded-full bg-accent-soft">
         <CheckCircle2 className="h-8 w-8 text-accent" aria-hidden="true" />
       </span>
-      <h1 className="text-3xl md:text-4xl">Thank you &mdash; that&rsquo;s come through</h1>
+      <h1 className="text-3xl md:text-4xl">Thank you, that&rsquo;s come through</h1>
       <p className="text-lg leading-relaxed text-muted-foreground">
         I read every one of these myself, so it may take a day or two. I&rsquo;ll come back to you
         with what&rsquo;s coming up and what would suit your young person best.

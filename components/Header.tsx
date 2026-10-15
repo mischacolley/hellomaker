@@ -22,7 +22,7 @@ export default function Header() {
           <Link
             href="/"
             className="flex shrink-0 items-center gap-2.5"
-            aria-label={`${siteMetadata.shortTitle} — home`}
+            aria-label={`${siteMetadata.shortTitle}, home`}
           >
             <Image
               src={siteMetadata.siteLogo}

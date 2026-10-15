@@ -10,7 +10,7 @@ import { Container, Section, SectionHeading } from '@/components/Container'
 export const metadata = genPageMetadata({
   title: 'Mobile Makerspace',
   description:
-    'A welcoming, self-directed space where young makers gather to explore, experiment and bring their own ideas to life — working towards a mobile makerspace for regional and remote communities.',
+    'A welcoming, self-directed space where young makers gather to explore, experiment and bring their own ideas to life, working towards a mobile makerspace for regional and remote communities.',
   path: '/makerspace',
 })
 
@@ -59,7 +59,7 @@ export default function MakerspacePage() {
             <p>
               In casual, supportive group sessions, young people explore STEAM topics through
               hands-on making. Art and craft, multimedia, visual design, robotics, coding, web
-              development, or a fusion of interests &mdash; each maker sets their own learning
+              development, or a fusion of interests. Each maker sets their own learning
               intention and chooses projects that genuinely excite them.
             </p>
             <p>
@@ -88,7 +88,7 @@ export default function MakerspacePage() {
               Right now we&rsquo;re starting with the essentials: curiosity and imagination. Plus
               power, internet access, a laptop and a growing collection of tools and materials.
               I&rsquo;m building the inventory thoughtfully, with plans to expand into a
-              fully-equipped mobile makerspace &mdash; a trailer that can serve as an outdoor
+              fully-equipped mobile makerspace, a trailer that can serve as an outdoor
               classroom and let us work with underserved communities across regional and remote
               areas.
             </p>
@@ -121,7 +121,7 @@ export default function MakerspacePage() {
             <div className="flex flex-col gap-4 rounded-2xl border border-border bg-secondary/60 p-6">
               <h2 className="text-lg">Want to help build it?</h2>
               <p className="text-sm leading-relaxed text-muted-foreground">
-                The makerspace is growing through the generosity of our community &mdash; donated
+                The makerspace is growing through the generosity of our community: donated
                 tools, offered spaces, and sponsorship towards the trailer.
               </p>
               <Button asChild variant="outline" className="w-fit rounded-full">

@@ -1,5 +1,5 @@
 /**
- * Social proof. Currently empty on purpose — the homepage section renders
+ * Social proof. Currently empty on purpose: the homepage section renders
  * nothing while this array is empty, so no placeholder quotes can ship by
  * accident.
  *

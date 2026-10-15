@@ -7,7 +7,7 @@ export default function Approach() {
       <SectionHeading eyebrow="Our approach" title="Technology is a tool, not just a screen">
         <p>
           Humans have been making technology for millions of years. We help young people place their
-          relationship with digital technology in that context &mdash; building wonder, capability
+          relationship with digital technology in that context: building wonder, capability
           and intentional choices.
         </p>
       </SectionHeading>

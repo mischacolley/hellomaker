@@ -4,7 +4,7 @@ export type Stage = {
   slug: string
   name: string
   stageName: string
-  /** TODO(decide): age bands are unset until confirmed — see the relaunch plan, section 10.
+  /** TODO(decide): age bands are unset until confirmed. See the relaunch plan, section 10.
    *  Nothing renders an age until this is a string. */
   ages?: string
   icon: LucideIcon
@@ -54,7 +54,7 @@ export const stages: Stage[] = [
     summary:
       'Technology timelines, inventions and ideas are explored to make sense of where we are with digital tech today.',
     detail:
-      "Building on the foundations from HelloExplorer — learnt there or picked up elsewhere — we continue to focus on origin stories and the evolution of technology through human-centred topics. We move at a pace that reflects where the group is as a whole. Think reading the stars, to the invention of the compass, to GPS and the role of satellites. Thinking is paired with doing in a very practical, hands-on way.",
+      "Building on the foundations from HelloExplorer (learnt there or picked up elsewhere), we continue to focus on origin stories and the evolution of technology through human-centred topics. We move at a pace that reflects where the group is as a whole. Think reading the stars, to the invention of the compass, to GPS and the role of satellites. Thinking is paired with doing in a very practical, hands-on way.",
     topics: [
       'Evolving Tools (industrial revolution)',
       'Power & Energy',
@@ -81,7 +81,7 @@ export const stages: Stage[] = [
     detail:
       'Are we creators or consumers? The customer or the product? The intent is to bring the humanities to this space and, paired with systems thinking and design thinking methodologies, begin to explore how we can use technology to positively impact the world around us.',
     topics: [
-      'Telling the truth — censorship, fake news, deep fakes',
+      'Telling the truth: censorship, fake news, deep fakes',
       'Taking responsibility',
       'Ethics, AI & Big Data',
       'Access & Accessibility',

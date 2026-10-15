@@ -4,7 +4,7 @@ const siteMetadata = {
   tagline: 'Confident creators, not just consumers',
   author: 'Mischa Colley',
   description:
-    'Holistic STEAM education in the Northern Rivers that takes young people from unplugged exploration to hands-on making — building problem-solving skills and a healthy relationship with technology.',
+    'Holistic STEAM education in the Northern Rivers that takes young people from unplugged exploration to hands-on making, building problem-solving skills and a healthy relationship with technology.',
   language: 'en-AU',
   locale: 'en_AU',
   // TODO(confirm): set to the live domain before deploying. Everything canonical

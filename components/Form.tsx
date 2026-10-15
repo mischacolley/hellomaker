@@ -25,7 +25,7 @@ type FormProps = {
 
 /**
  * The interest form. Fillout handles submission and holds the redirect to
- * /thanks — set that redirect in the Fillout dashboard so ad platforms have a
+ * /thanks. Set that redirect in the Fillout dashboard so ad platforms have a
  * conversion URL to fire against. `inheritParameters` carries UTMs through to
  * the submission.
  */

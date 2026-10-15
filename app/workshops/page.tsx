@@ -8,7 +8,7 @@ import { Section, SectionHeading } from '@/components/Container'
 export const metadata = genPageMetadata({
   title: 'One-off workshops',
   description:
-    'Nine standalone workshops covering robotics, web development, design thinking, online safety and the ethics of technology — for schools, festivals and community events.',
+    'Nine standalone workshops covering robotics, web development, design thinking, online safety and the ethics of technology. For schools, festivals and community events.',
   path: '/workshops',
 })
 

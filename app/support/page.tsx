@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button'
 export const metadata = genPageMetadata({
   title: 'Support us',
   description:
-    'Help build the Mobile Makerspace — donate tools and materials, host a popup session in your community, or sponsor the trailer.',
+    'Help build the Mobile Makerspace: donate tools and materials, host a popup session in your community, or sponsor the trailer.',
   path: '/support',
 })
 
@@ -17,7 +17,7 @@ const ways = [
     icon: Gift,
     title: 'Donate',
     description:
-      'Tools, tech or materials. Hand tools, components, laptops, craft supplies — if it helps young people make something, it will get used.',
+      'Tools, tech or materials. Hand tools, components, laptops, craft supplies. If it helps young people make something, it will get used.',
   },
   {
     icon: MapPin,
@@ -63,7 +63,7 @@ export default function SupportPage() {
         <div className="mx-auto flex max-w-2xl flex-col items-center gap-5 text-center">
           <SectionHeading eyebrow="Talk to me" title="Any of the above?" />
           <p className="text-lg text-muted-foreground">
-            Drop me a line and tell me what you have in mind. No form, no pitch &mdash; just an
+            Drop me a line and tell me what you have in mind. No form, no pitch. Just an
             email.
           </p>
           <Button asChild size="lg" className="rounded-full">

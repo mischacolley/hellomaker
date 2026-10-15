@@ -7,7 +7,7 @@ import { Container, Section, SectionHeading } from '@/components/Container'
 export const metadata = genPageMetadata({
   title: 'For parents',
   description:
-    "HelloParent — coaching and resources for parents navigating the role of technology in their own lives, and in their children's.",
+    "HelloParent: coaching and resources for parents navigating the role of technology in their own lives, and in their children's.",
   path: '/parents',
 })
 
@@ -25,7 +25,7 @@ const offers = [
   {
     title: 'Resources for parents',
     description:
-      'Practical starting points — what to look for, what to worry less about, and where to go next.',
+      'Practical starting points: what to look for, what to worry less about, and where to go next.',
   },
 ]
 
@@ -35,7 +35,7 @@ export default function ParentsPage() {
       <PageHeader
         eyebrow="HelloParent"
         title="Your relationship with tech shapes theirs"
-        lede="Not every young person and family will use, value or understand digital technology in the same way — and that's fine. But our own relationships with technology shape those of the young people in our lives."
+        lede="Not every young person and family will use, value or understand digital technology in the same way, and that's fine. But our own relationships with technology shape those of the young people in our lives."
       >
         <div className="pt-1">
           <Form
@@ -55,7 +55,7 @@ export default function ParentsPage() {
           </p>
           <p>
             What&rsquo;s usually being described there is a level of familiarity, comfort or desire
-            to use digital technology &mdash; not actual ability. That matters, because the feeling
+            to use digital technology, not actual ability. That matters, because the feeling
             often translates into technology avoidance rather than empowerment.
           </p>
           <p>

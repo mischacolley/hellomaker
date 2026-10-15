@@ -12,7 +12,7 @@ export default function CtaBand() {
           </h2>
           <p className="max-w-md text-primary-foreground/80">
             Tell me a little about your young person and I&rsquo;ll be in touch about what&rsquo;s
-            coming up. No commitment &mdash; just a conversation.
+            coming up. No commitment, just a conversation.
           </p>
           <Form
             filloutId={siteMetadata.forms.general}

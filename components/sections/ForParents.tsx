@@ -33,7 +33,7 @@ export default function ForParents() {
           >
             <p>
               Not every young person or family will use, value or understand digital technology the
-              same way &mdash; and that&rsquo;s fine. HelloParent is for parents grappling with the
+              same way, and that&rsquo;s fine. HelloParent is for parents grappling with the
               role of technology in their own lives, and looking for ways to guide their children
               through it.
             </p>
