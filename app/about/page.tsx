@@ -84,10 +84,10 @@ export default function AboutPage() {
           <aside className="flex flex-col gap-6">
             <div className="overflow-hidden rounded-2xl border border-border bg-secondary shadow-card">
               <Image
-                src="/static/images/profile.jpeg"
+                src="/static/images/profile.jpg"
                 alt="Mischa Colley"
-                width={600}
-                height={600}
+                width={741}
+                height={742}
                 className="h-auto w-full object-cover"
                 sizes="(max-width: 1024px) 100vw, 33vw"
               />
