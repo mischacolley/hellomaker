@@ -14,8 +14,9 @@ const siteMetadata = {
   socialBanner: '/static/images/TechLearningForYoungPeople.png',
   email: 'info@hellomaker.org',
   region: 'Northern Rivers, NSW',
-  // TODO(decide): age band for the hero badge and form options. Null = nothing renders.
-  ageRange: null,
+  // Overall published age range. Feeds the hero sentence; per-stage bands in
+  // data/stages.ts are still unset. Null here = the sentence simply omits it.
+  ageRange: '6–18',
   authorSite: 'https://mischacolley.com.au/',
   analytics: {
     umamiWebsiteId: process.env.NEXT_UMAMI_ID,

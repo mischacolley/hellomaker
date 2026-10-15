@@ -1,10 +1,25 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight, MapPin } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import siteMetadata from '@/data/siteMetadata'
 import Form from '@/components/Form'
 import { Button } from '@/components/ui/button'
 import { Container } from '@/components/Container'
+
+/**
+ * Place sits in the opening sentence rather than in a badge above the headline.
+ * The badge duplicated a fact the page already states five other times, and a
+ * geographic chip at the top reads as a gate on the whole offering when one of
+ * the formats is deliberately online. In a sentence it also carries more weight
+ * for local search than a decorative element does.
+ *
+ * Ages join the same sentence once that call is made (siteMetadata.ageRange).
+ */
+function openingClause() {
+  return siteMetadata.ageRange
+    ? `Holistic STEAM learning in the Northern Rivers for ages ${siteMetadata.ageRange}, taking young people`
+    : 'Holistic STEAM learning in the Northern Rivers that takes young people'
+}
 
 export default function Hero() {
   return (
@@ -12,20 +27,13 @@ export default function Hero() {
       <Container>
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col items-start gap-6">
-            <p className="inline-flex items-center gap-2 rounded-full bg-accent-soft px-4 py-1.5 text-sm font-medium text-accent">
-              <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
-              {siteMetadata.ageRange ? `${siteMetadata.ageRange} · ` : ''}
-              {siteMetadata.region}
-            </p>
-
             <h1 className="text-4xl leading-[1.08] md:text-5xl lg:text-[3.4rem]">
               Confident <span className="text-primary-strong">creators</span>, not just consumers.
             </h1>
 
             <p className="max-w-lg text-lg leading-relaxed text-muted-foreground">
-              Holistic STEAM learning that takes young people from unplugged exploration to hands-on
-              making &mdash; building real problem-solving skills and a healthy relationship with
-              digital technology.
+              {openingClause()} from unplugged exploration to hands-on making, building real
+              problem-solving skills and a healthy relationship with digital technology.
             </p>
 
             <div className="flex flex-col gap-3 sm:flex-row">
